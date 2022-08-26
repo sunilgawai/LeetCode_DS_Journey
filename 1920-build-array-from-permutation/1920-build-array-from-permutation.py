@@ -1,12 +1,3 @@
-class Solution {
-    public int[] buildArray(int[] nums) {
-        int ans[] =  new int[nums.length];
-        if(nums.length > 0){
-            for(int i = 0; i < nums.length; i++){
-                ans[i] = nums[nums[i]];
-            }
-            return ans;
-        }
-        return ans;
-    }
-}
+class Solution:
+    def buildArray(self, nums: List[int]) -> List[int]:
+        return [nums[nums[i]] for i in range(len(nums))]
